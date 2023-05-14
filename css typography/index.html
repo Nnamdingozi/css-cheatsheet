@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Typography</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>CSS Typography</h1>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>PROPERTY</th>
+            <th>DESCRIPTION</th>
+            <th>USAGE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row">
+            <th>CSS font-weight Property</th>
+            <td class="description">
+              The CSS font-weight property declares how thick or thin should be
+              the characters of a text. Numerical values can be used with this
+              property to set the thickness of the text. The numeric scale range
+              of this property is from 100 to 900 and accepts only multiples of
+              100. The default value is normal while the default numerical value
+              is 400. Any value less than 400 will have text appear lighter than
+              the default while any numerical value greater than the 400 will
+              appear bolder.
+            </td>
+            <td><code>p { font-weight: 700; } </code></td>
+          </tr>
+          <tr>
+            <th>CSS font-style property</th>
+            <td class="description">
+              The CSS font-style property determines the font style in which
+              text will appear. It accepts italic as a value to set the font
+              style to italic.
+            </td>
+            <td><code>.text { font-style: italic; } </code></td>
+          </tr>
+          <tr>
+            <th>CSS @font-face rule</th>
+            <td class="description">
+              The CSS @font-face rule allows external fonts or font files to be
+              imported directly into stylesheets.The location of the font file
+              must be specified in the CSS rule so that the files can be loaded
+              from that location. This rule also allows locally hosted fonts to
+              be added using a relative file path instead of a web URL.
+            </td>
+            <td>
+              <code
+                >@font-face { font-family: 'Glegoo'; src:
+                url('../fonts/Glegoo-Regular.ttf') format('truetype'); }</code
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>CSS Fallback Fonts</th>
+            <td class="description">
+              The CSS font-family property can have multiple fonts declared in
+              order of preference. In this case the fonts following the initial
+              font are known as the fallback fonts. If the initial value of the
+              property font-family fails to load to the webpage, the fallback
+              fonts will be used.
+            </td>
+            <td>
+              <code
+                >/* Here `Arial` is the fallback font for
+                 p tags */ p { font-family: "Helvetica", "Arial"; }</code
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>The CSS line-height property</th>
+            <td class="description">The CSS line-height property declares the vertical spacing between lines of text. It accepts both unitless numbers as a ratio (eg. 2) and numbers specified by unit as values (eg. 12px) but it does not accept negative numbers. A unitless number is an absolute value that will compute the line height as a ratio to the font size and a unit number can be any valid CSS unit (eg. pixels, percents, ems, rems, etc.). To set the line-height of the <p> elements to 10px, the given CSS declaration can be used.</td>
+            <td><code>p {
+              line-height: 10px;
+              }</code></td>
+          </tr>
+          <tr>
+            <th>CSS Linking fonts</th>
+            <td class="description">Linking fonts allow user to use web fonts in the document. They can be imported in an HTML document by using the <link> tag. Once the web font URL is placed within the href attribute, the imported font can then be used in CSS declaration</td>
+            <td><code><head>
+              <link href="https://fonts.googleapis.com/css?family=Droid%20Serif" rel="stylesheet">
+            </head></code></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
